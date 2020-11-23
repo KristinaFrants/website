@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faShoppingBasket, faStoreAlt, faBars } from '@fortawesome/free-solid-svg-icons';
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
-import Landing from './Landing';
 
 
 

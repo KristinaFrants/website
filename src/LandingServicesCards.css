@@ -3,9 +3,10 @@
      margin:4% 2% 4% 3%;
      transition: top ease 0.5s;
      display: flex;
-     position: relative;
+     /* position: relative; */
      transition: transform 0.8s;
   transform-style: preserve-3d;
+  font-family: Playfair Display, serif
 }
 
 .LandingCardServices__cards:hover{
@@ -22,4 +23,52 @@
     transform: rotateY(180deg);
     background-color:rgb(234, 237, 237);
    padding-left: 4%;
+  }
+
+  .LandingCardServices__info{
+    float: right;
+    color: red;
+    object-fit: contain;
+  }
+
+  .LandingServices__blob{
+    background:linear-gradient(45deg, #8f44ad 0%,#46b39e 100%);
+    padding: 60px;
+    display: block;
+    height: 100%;
+    margin-top: 4%;
+    border: 15px solid white;
+    border-radius: 5px;
+    margin-left:1%;
+    margin-right: 1%;
+  }
+
+  .LandingServicesBlob__left> h2{
+    color:white;
+    font-family: Playfair Display, serif;
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  .LandingServicesBlob__left>p{
+    color:white;
+    font-family: Playfair Display, serif;
+    text-align: center;
+    padding: 10%;
+    font-size: 18px;
+  }
+
+  .LandingServicesBlob__right> h2{
+    color:white;
+    font-family: Playfair Display, serif;
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  .LandingServicesBlob__right>p{
+    color:white;
+    font-family: Playfair Display, serif;
+    text-align: center;
+    padding: 10%;
+    font-size: 18px;
   }
