@@ -1,0 +1,25 @@
+.LandingCardServices__cards{
+    background-color: transparent !important;
+     margin:4% 2% 4% 3%;
+     transition: top ease 0.5s;
+     display: flex;
+     position: relative;
+     transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.LandingCardServices__cards:hover{
+    top: -10px;
+    box-shadow: 0px 0px 10px 0px black;
+    transform: rotateY(180deg);
+    transition: all 0.6s ease-in-out 0s;
+  }
+
+  .flip_card_back{
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    position: absolute;
+    transform: rotateY(180deg);
+    background-color:rgb(234, 237, 237);
+   padding-left: 4%;
+  }
