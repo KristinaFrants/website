@@ -13,13 +13,16 @@ function Home() {
                 <img  className="home__image" src="https://image.freepik.com/free-vector/blue-technology-glowing-lines-background_1017-17493.jpg"/>
             
             <div className="home__row">
-            <Product
+       
+            <Product 
                 id={1}
                 title="Your product description goes here"
                 price={29.99}
                 image="https://image.freepik.com/free-photo/top-view-body-butter-recipient_23-2148542969.jpg"
                 rating={5}
                 />
+        
+            
                 <Product
                 id={2}
                 title="Your product description goes here"
@@ -27,9 +30,10 @@ function Home() {
                 image="https://image.freepik.com/free-photo/close-up-body-butter-recipient_23-2148542975.jpg"
                 rating={4}
                                 />
+                             
             </div>
 
-            <div className="home__row">
+            <div className="home__row sm-3">
                 {/* Products row2 */}
                 <Product
                 id={3}
@@ -37,6 +41,7 @@ function Home() {
                 price={25.99}
                 image="https://image.freepik.com/free-photo/close-up-body-butter-bottle_23-2148543024.jpg"
                 rating={3}
+                
                 />
                 <Product
                 id={4}

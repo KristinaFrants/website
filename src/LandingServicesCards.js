@@ -57,7 +57,7 @@ function LandingServicesCards() {
 <div className="col LandingServicesBlob__left">
   <h2>Marketing</h2>
   <p>We drive awareness to your brand and help you connect with your audience in the right place and at the right time.</p>
-  <Link to="/home">
+  <Link to="/home" className='LandingServicesBlob__leftLink'>
   <p>View services </p>
   </Link>
 </div>
@@ -65,7 +65,7 @@ function LandingServicesCards() {
 <div className="col LandingServicesBlob__right">
   <h2>Creative</h2>
   <p>We create effective visual languages that can help you build your credibility, recognition, and competitiveness.</p>
-  <Link to="/home">
+  <Link to="/home" className='LandingServicesBlob__rightLink'>
   <p>View services </p>
   </Link>
 </div>

@@ -3,6 +3,7 @@ import { LandingCard } from "./LandingCard";
 import LandingServices from "./LandingServices";
 import ParallaxContainer from "./Parallax"
 import "./Landing.css"
+import ContactForm from './ContactForm';
 
 
 function Landing() {
@@ -12,6 +13,7 @@ function Landing() {
             <div>
            <div> <LandingCard className=" mb-5" /></div>
             <div> <LandingServices className=""/></div>
+            <div> <ContactForm/></div>
             </div>
         </div>
     

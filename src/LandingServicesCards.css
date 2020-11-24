@@ -72,3 +72,12 @@
     padding: 10%;
     font-size: 18px;
   }
+
+  .LandingServicesBlob__leftLink , 
+  .LandingServicesBlob__rightLink {
+    color:rgb(94, 3, 82);
+    font-family: Playfair Display, serif;
+    text-align: center;
+    text-decoration: none !important;
+    font-size: 18px;
+  }
