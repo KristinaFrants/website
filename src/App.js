@@ -14,6 +14,7 @@ import { loadStripe } from "@stripe/stripe-js"
 import { Elements } from "@stripe/react-stripe-js"
 import Footer from './Footer';
 import NavigationBar from "./Navbar"
+import ScrollToTop from "./scrollToTop";
 
 
 const promise = loadStripe('pk_test_51HgyLuHo57i5kpMGKKELqDAn1MfzNVis10VKnHUKlGamTwWRqp2Z9ueMQkasFygNqvPhHYUkwTRJ8plm51xtB1xL00oihmOVPM');
@@ -45,42 +46,44 @@ function App() {
   return (
     <Router>
     <div className="app">
+    <ScrollToTop>
     <NavigationBar/>
      <Switch>
 
     <Route path="/orders">
       <Orders/>
-      <Footer/>
+ 
     </Route>
 
      <Route path="/login">
          <Login/>
-         <Footer/>
+ 
        </Route>
 
        <Route path="/checkout">
          <Checkout/>
-         <Footer/>
+
        </Route>
 
        <Route path="/payment">
        <Elements stripe= {promise} >
          <Payment/>
          </Elements>
-         <Footer/>
+   
        </Route>
 
        {/*Default Route*/}
        <Route path="/home">
          <Home/>
-         <Footer/>
+
        </Route>
 
        <Route path="/">
          <Landing/>
-       <Footer/>
        </Route>
      </Switch>
+       <Footer/>
+       </ScrollToTop>
     </div>
     </Router>
   );

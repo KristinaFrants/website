@@ -14,8 +14,8 @@
 .header{
     display: flex;
     height: 65px;
-    /* position: sticky;
-    top: 0; */
+    position: sticky;
+    top: 0;
     z-index: 100;
     width: 100%;
     background:linear-gradient(-45deg, #23a6d5, #8f44ad,#46b39e,#34c7a5);

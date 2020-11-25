@@ -52,7 +52,7 @@ const hideDropdown = e => {
           
             </Nav.Link>
 
-            <Nav.Link href="#bar">bar</Nav.Link>
+            <Nav.Link href="#bar">Company</Nav.Link>
 
             <NavDropdown 
             title="Dropdown" id="collasible-nav-dropdown"
