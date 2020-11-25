@@ -2,12 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faPhone, faPrint } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faGithub, faGooglePlus, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faGooglePlus, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+
 
 function Footer() {
     return (
-        <div>
+        <div className="Footer">
             {/* Footer */}
+           
 <footer className="page-footer font-small mdb-color pt-4 mt-4 mb-4">
   {/* Footer Links */}
   <div className="container text-center text-md-left">
@@ -121,7 +123,6 @@ function Footer() {
   {/* Footer Links */}
 </footer>
 {/* Footer */}
-
 
         </div>
     )

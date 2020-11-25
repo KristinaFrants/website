@@ -1,5 +1,4 @@
 
-
 import React from "react";
 import { Parallax} from "react-parallax";
 
@@ -19,7 +18,9 @@ const ParallaxContainer = () => (
   <div style={{width:'100%',marginBottom:"10%"}}>
     <Parallax bgImage={image1} strength={200}>
     <div style={{ height: '500px', border: "15px solid white", borderRadius: "5px" }} />
-        <div style={insideStyles}>HTML inside the parallax</div>
+     
+        <div style={insideStyles}>HTML inside the parallax
+        <p>Paragraph inside the block</p></div>
       
     </Parallax>
     {/* <h2>| | |</h2> */}

@@ -13,6 +13,7 @@ import { useStateValue } from './StateProvider'
 import { loadStripe } from "@stripe/stripe-js"
 import { Elements } from "@stripe/react-stripe-js"
 import Footer from './Footer';
+import NavigationBar from "./Navbar"
 
 
 const promise = loadStripe('pk_test_51HgyLuHo57i5kpMGKKELqDAn1MfzNVis10VKnHUKlGamTwWRqp2Z9ueMQkasFygNqvPhHYUkwTRJ8plm51xtB1xL00oihmOVPM');
@@ -44,7 +45,7 @@ function App() {
   return (
     <Router>
     <div className="app">
-    <Header/>
+    <NavigationBar/>
      <Switch>
 
     <Route path="/orders">
