@@ -4,6 +4,7 @@ import LandingServices from "./LandingServices";
 import ParallaxContainer from "./Parallax"
 import "./Landing.css"
 import ContactForm from './ContactForm';
+import DesignCards from './DesignCards';
 
 
 function Landing() {
@@ -12,6 +13,7 @@ function Landing() {
         <ParallaxContainer/>
             <div>
            <div> <LandingCard className=" mb-5" /></div>
+           <div> <DesignCards></DesignCards></div>
             <div> <LandingServices className=""/></div>
             <div> <ContactForm/></div>
             </div>

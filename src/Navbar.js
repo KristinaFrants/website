@@ -55,7 +55,7 @@ const hideDropdown = e => {
             <Nav.Link href="#bar">Company</Nav.Link>
 
             <NavDropdown 
-            title="Dropdown" id="collasible-nav-dropdown"
+            title="Profile" id="collasible-nav-dropdown"
             show={show}
             onMouseEnter={showDropdown} 
             onMouseLeave={hideDropdown}
