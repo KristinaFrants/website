@@ -8,6 +8,7 @@ import Login from './Login'
 import Payment from './Payment'
 import Orders from './Orders'
 import Landing from './Landing'
+import EachProduct from './EachProduct'
 import { auth } from './firebase'
 import { useStateValue } from './StateProvider'
 import { loadStripe } from "@stripe/stripe-js"
@@ -52,12 +53,10 @@ function App() {
 
     <Route path="/orders">
       <Orders/>
- 
     </Route>
 
      <Route path="/login">
          <Login/>
- 
        </Route>
 
        <Route path="/checkout">
@@ -69,13 +68,15 @@ function App() {
        <Elements stripe= {promise} >
          <Payment/>
          </Elements>
-   
+       </Route>
+
+       <Route path="/eachProduct/:id">
+         <EachProduct/>
        </Route>
 
        {/*Default Route*/}
        <Route path="/home">
          <Home/>
-
        </Route>
 
        <Route path="/">

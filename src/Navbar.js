@@ -17,6 +17,12 @@ import {  faShoppingBasket, faStoreAlt, } from '@fortawesome/free-solid-svg-icon
 function NavigationBar() {
     const [{ basket, user }, dispatch] = useStateValue();
 
+    function sendEmail ()
+{
+    window.location = "mailto:xyz@abc.com";
+}
+
+
 
     const handleAuthentication = () => {
         if (user) {
@@ -105,12 +111,13 @@ const hideDropdown = e => {
 
           <Nav>
             <Nav.Link>
-            <div className="header__contactNumber col">
+            <div className="header__contactNumber col mt-2">
                     <h6>571-555-5555</h6>
                 </div>
                  </Nav.Link>
             <Nav.Link eventKey={2}>
-            <Button className="startAproject__button" variant="outline-light">Start a Project</Button>
+              <Button className="startAproject__button" variant="outline-light" onClick = {sendEmail} >Start a Project</Button>
+ 
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

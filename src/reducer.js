@@ -1,5 +1,6 @@
 export const initialState ={
     basket: [],
+    eachProd: [],
     user: null
 }
 
@@ -45,6 +46,11 @@ const reducer = (state, action) => {
                             ...state,
                             user: action.user
                         }
+
+                    case "SHOW_PRODUCT":
+                        return{
+                            ...state,
+                            eachProd: [...state.eachProd, action.item],}
 
         default:
             return state;

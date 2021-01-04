@@ -2,6 +2,7 @@ import React from 'react'
 import "./Product.css";
 import { Button } from 'react-bootstrap';
 import {useStateValue} from "./StateProvider";
+import { Link } from 'react-router-dom'
 
 function Product({id, title, image, price, rating}) {
     const [{basket}, dispatch] = useStateValue()
@@ -9,6 +10,19 @@ function Product({id, title, image, price, rating}) {
     const addToBasket = () => {
         dispatch({
             type: 'ADD_TO_BASKET',
+            item: {
+                id: id,
+                title: title,
+                image: image,
+                price: price,
+                rating: rating,
+            },
+        })
+    }
+
+    const addProd=()=>{
+        dispatch({
+            type: 'SHOW_PRODUCT',
             item: {
                 id: id,
                 title: title,
@@ -35,6 +49,7 @@ function Product({id, title, image, price, rating}) {
             
             <img src={image}/>
             <Button onClick={addToBasket} variant="dark" size="sm">Add to Basket</Button>
+            <Link onClick={addProd} to={"/eachProduct/" + id}>Show</Link>
         </div>
     )
 }
