@@ -52,6 +52,12 @@ const reducer = (state, action) => {
                             ...state,
                             eachProd: [...state.eachProd, action.item],}
 
+                    case 'EMPTY_PRODUCT':
+                                return{
+                                    ...state,
+                                    eachProd: []
+                                }
+
         default:
             return state;
     }

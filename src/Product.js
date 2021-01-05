@@ -19,9 +19,10 @@ function Product({id, title, image, price, rating}) {
             },
         })
     }
-
     const addProd=()=>{
-        dispatch({
+        
+        dispatch(
+            {
             type: 'SHOW_PRODUCT',
             item: {
                 id: id,
@@ -50,6 +51,7 @@ function Product({id, title, image, price, rating}) {
             <img src={image}/>
             <Button onClick={addToBasket} variant="dark" size="sm">Add to Basket</Button>
             <Link onClick={addProd} to={"/eachProduct/" + id}>Show</Link>
+            
         </div>
     )
 }
