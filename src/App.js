@@ -3,10 +3,10 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 import Header from './Header';
 import Home from "./Home";
-import Checkout from './Checkout'
-import Login from './Login'
-import Payment from './Payment'
-import Orders from './Orders'
+import Checkout from '../src/profile/Checkout'
+import Login from '../src/profile/Login'
+import Payment from './profile/Payment'
+import Orders from '../src/profile/Orders'
 import Landing from './Landing'
 import EachProduct from './EachProduct'
 import { auth } from './firebase'

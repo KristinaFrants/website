@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Product.css";
 import { Button } from 'react-bootstrap';
-import {useStateValue} from "./StateProvider";
+import {useStateValue} from "../StateProvider";
 import { Link } from 'react-router-dom'
 
 function Product({id, title, image, price, rating}) {
@@ -34,7 +34,12 @@ function Product({id, title, image, price, rating}) {
         })
     }
     return (
+    <Link onClick={addProd} to={"/eachProduct/" + id} style={{textDecoration:"none"}}>
         <div className="product">
+           
+            <img src={image}/> 
+            {/* <Button onClick={addToBasket} variant="dark" size="sm">Add to Basket</Button> */}
+            {/* <Link onClick={addProd} to={"/eachProduct/" + id}>Show</Link> */}
             <div className="product__info">
                     <p>{title}</p>
                     <p className="product__price">
@@ -46,13 +51,8 @@ function Product({id, title, image, price, rating}) {
                         <p>⭐</p>
                     ))}
                 </div>
-            </div>
-            
-            <img src={image}/>
-            <Button onClick={addToBasket} variant="dark" size="sm">Add to Basket</Button>
-            <Link onClick={addProd} to={"/eachProduct/" + id}>Show</Link>
-            
-        </div>
+            </div>   
+        </div> </Link>  
     )
 }
 

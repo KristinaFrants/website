@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Home.css"
-import Product from "./Product"
+import Product from "../src/profile/Product"
+import YouTube from "@u-wave/react-youtube";
+import ReactPlayer from 'react-player'
 
 
 function Home() {
@@ -9,17 +11,22 @@ function Home() {
         
         <div className="home ">
             <div className="home__container ">
-
-                <img  className="home__image" src="https://image.freepik.com/free-vector/blue-technology-glowing-lines-background_1017-17493.jpg"/>
+           {/* <div className="youtube__video">
+            <YouTube autoplay muted  width="100%" height="35px"     
+            video="rhFhynQCAqs"  
+            controls="0" showCaptions="false" /></div>  */}
+            {/* <iframe width="100%" height="500px" src="https://res.cloudinary.com/div5hqtbd/video/upload/v1610058335/video_qfrjh3.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                <img  className="home__image" src="https://media.giphy.com/media/70avjXLCYWf5ZoJTWY/giphy.gif"/>
             
 
             <div className="home__row row mx-auto">
+                
                 <div className="home__col">
                 <Product  
                 id={1}
                 title="Your product description goes here"
                 price={29.99}
-                image="https://image.freepik.com/free-photo/top-view-body-butter-recipient_23-2148542969.jpg"
+                image="https://res.cloudinary.com/div5hqtbd/image/upload/v1610674166/petfinders__img_mtoy7g.jpg"
                 rating={5}
                 />
                  </div> 
@@ -32,7 +39,8 @@ function Home() {
                 image="https://image.freepik.com/free-photo/close-up-body-butter-recipient_23-2148542975.jpg"
                 rating={4}
                 />
-                </div>        
+                </div>  
+            
             </div> 
 
                 {/* Products row2 */}

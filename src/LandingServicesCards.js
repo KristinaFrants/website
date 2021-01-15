@@ -24,7 +24,7 @@ function LandingServicesCards() {
       <FontAwesomeIcon icon={faInfo} className="LandingCardServices__info" />
     </Link>
         <h5 style={{marginTop:"2%"}}>Lorem ipsum dolor sit</h5>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aperiam sequi quia doloremque recusandae et. Lorem inpusum dolor.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aperiam sequi quia doloremque recusandae et.</p>
     </div>
         </Card>
       </Col>
