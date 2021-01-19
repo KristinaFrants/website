@@ -1,8 +1,9 @@
 import React from 'react'
 import "./Home.css"
 import Product from "../src/profile/Product"
-import YouTube from "@u-wave/react-youtube";
-import ReactPlayer from 'react-player'
+
+
+
 
 
 function Home() {
@@ -11,11 +12,6 @@ function Home() {
         
         <div className="home ">
             <div className="home__container ">
-           {/* <div className="youtube__video">
-            <YouTube autoplay muted  width="100%" height="35px"     
-            video="rhFhynQCAqs"  
-            controls="0" showCaptions="false" /></div>  */}
-            {/* <iframe width="100%" height="500px" src="https://res.cloudinary.com/div5hqtbd/video/upload/v1610058335/video_qfrjh3.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                 <img  className="home__image" src="https://media.giphy.com/media/70avjXLCYWf5ZoJTWY/giphy.gif"/>
             
 
@@ -24,9 +20,15 @@ function Home() {
                 <div className="home__col">
                 <Product  
                 id={1}
-                title="Your product description goes here"
+                header="Petfinders"
+                title="Fully responcive ReactJs webapp that helps users to sell or buy a furry friend"
                 price={29.99}
-                image="https://res.cloudinary.com/div5hqtbd/image/upload/v1610674166/petfinders__img_mtoy7g.jpg"
+                image="https://res.cloudinary.com/div5hqtbd/image/upload/v1610911651/Untitled_aghpzh.png"
+                play="https://res.cloudinary.com/div5hqtbd/video/upload/v1610058295/video_dalpks.mp4"
+                demolink="https://petfinders.kristinafrants.vercel.app/"
+                description=" bblala"
+                login="Email: margo@gmail.com 
+                Pass: 12345"
                 rating={5}
                 />
                  </div> 
@@ -36,7 +38,7 @@ function Home() {
                 id={2}
                 title="Your product description goes here"
                 price={19.99}
-                image="https://image.freepik.com/free-photo/close-up-body-butter-recipient_23-2148542975.jpg"
+                image="https://res.cloudinary.com/div5hqtbd/image/upload/v1610911651/Untitled_aghpzh.png"
                 rating={4}
                 />
                 </div>  

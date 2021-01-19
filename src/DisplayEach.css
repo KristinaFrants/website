@@ -1,0 +1,44 @@
+.displayEach__video{
+    background-color: ivory;
+    padding: 5%;
+    margin-top: 2%;
+    margin-left: 4%;
+   
+}
+
+.displayEach__info{
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    /* height: 50%;
+    width: 100%;
+    margin-top: 2%; */
+    
+}
+
+.displayEach{
+    height: 50%;
+    width: 100%;
+    margin-top: 2%;
+    
+}
+
+.roller__icon{
+    font-size: 65px;
+    color: rgb(187, 35, 207);
+    text-align: center;    
+}
+
+.displayEach__icons{
+border: 1px solid gold;
+margin: 5px 5px 5px 5px;
+text-align: center; 
+}
+
+.roller__icon:hover{
+    color:red;
+   
+}
+
+.displayEach__icons:hover{
+    background-color: ivory;
+}
