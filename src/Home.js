@@ -36,7 +36,10 @@ function Home() {
                 <div className="home__col ">
                 <Product
                 id={2}
-                title="Your product description goes here"
+                header="Star Wars Clone"
+                title="Epic Saga Fanpage created with React for the Front End with RESTful API using Star Wars Database "
+                demolink="https://star-wars-api-seven.now.sh/"
+                play="https://res.cloudinary.com/div5hqtbd/video/upload/v1610058295/video_dalpks.mp4"
                 price={19.99}
                 image="https://res.cloudinary.com/div5hqtbd/image/upload/v1610911651/Untitled_aghpzh.png"
                 rating={4}
