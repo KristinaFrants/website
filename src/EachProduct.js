@@ -9,7 +9,7 @@ function EachProduct({id, image, title, price, rating,hideButton}) {
 
 
     return (
-        <div className="checkoutProduct">
+        <div className="EachProduct">
 
             {eachProd.slice(-1).map(item =>(
                     
@@ -19,6 +19,11 @@ function EachProduct({id, image, title, price, rating,hideButton}) {
                         image={item.image}
                         price={item.price}
                         rating={item.rating}
+                        header={item.header}
+                        play={item.play}
+                        demolink={item.demolink}
+                        description={item.description}
+                        login={item.login}
                     />
                 ))}
                     

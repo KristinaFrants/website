@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Product.css";
 import { Button } from 'react-bootstrap';
-import {useStateValue} from "./StateProvider";
+import {useStateValue} from "../StateProvider";
 import { Link } from 'react-router-dom'
 
-function Product({id, title, image, price, rating}) {
+function Product({id, title, image, price, rating,header, play,description,demolink,login}) {
     const [{basket}, dispatch] = useStateValue()
 
     const addToBasket = () => {
@@ -30,12 +30,24 @@ function Product({id, title, image, price, rating}) {
                 image: image,
                 price: price,
                 rating: rating,
+                header:header,
+                play:play,
+                demolink:demolink,
+                description:description,
+                login:login,
+
             },
         })
     }
     return (
+    <Link onClick={addProd} to={"/eachProduct/" + id} style={{textDecoration:"none"}}>
         <div className="product">
+           
+            <img src={image}/> 
+            {/* <Button onClick={addToBasket} variant="dark" size="sm">Add to Basket</Button> */}
+            {/* <Link onClick={addProd} to={"/eachProduct/" + id}>Show</Link> */}
             <div className="product__info">
+                <h3>{header}</h3>
                     <p>{title}</p>
                     <p className="product__price">
                         <small>$</small>
@@ -46,13 +58,8 @@ function Product({id, title, image, price, rating}) {
                         <p>⭐</p>
                     ))}
                 </div>
-            </div>
-            
-            <img src={image}/>
-            <Button onClick={addToBasket} variant="dark" size="sm">Add to Basket</Button>
-            <Link onClick={addProd} to={"/eachProduct/" + id}>Show</Link>
-            
-        </div>
+            </div>   
+        </div> </Link>  
     )
 }
 

@@ -1,6 +1,9 @@
 import React from 'react'
 import "./Home.css"
-import Product from "./Product"
+import Product from "../src/profile/Product"
+
+
+
 
 
 function Home() {
@@ -9,17 +12,23 @@ function Home() {
         
         <div className="home ">
             <div className="home__container ">
-
-                <img  className="home__image" src="https://image.freepik.com/free-vector/blue-technology-glowing-lines-background_1017-17493.jpg"/>
+                <img  className="home__image" src="https://media.giphy.com/media/70avjXLCYWf5ZoJTWY/giphy.gif"/>
             
 
             <div className="home__row row mx-auto">
+                
                 <div className="home__col">
                 <Product  
                 id={1}
-                title="Your product description goes here"
+                header="Petfinders"
+                title="Fully responcive ReactJs webapp that helps users to sell or buy a furry friend"
                 price={29.99}
-                image="https://image.freepik.com/free-photo/top-view-body-butter-recipient_23-2148542969.jpg"
+                image="https://res.cloudinary.com/div5hqtbd/image/upload/v1610911651/Untitled_aghpzh.png"
+                play="https://res.cloudinary.com/div5hqtbd/video/upload/v1610058295/video_dalpks.mp4"
+                demolink="https://petfinders.kristinafrants.vercel.app/"
+                description=" bblala"
+                login="Email: margo@gmail.com 
+                Pass: 12345"
                 rating={5}
                 />
                  </div> 
@@ -29,10 +38,11 @@ function Home() {
                 id={2}
                 title="Your product description goes here"
                 price={19.99}
-                image="https://image.freepik.com/free-photo/close-up-body-butter-recipient_23-2148542975.jpg"
+                image="https://res.cloudinary.com/div5hqtbd/image/upload/v1610911651/Untitled_aghpzh.png"
                 rating={4}
                 />
-                </div>        
+                </div>  
+            
             </div> 
 
                 {/* Products row2 */}
