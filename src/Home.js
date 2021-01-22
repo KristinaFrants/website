@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Home.css"
 import Product from "../src/profile/Product"
-
+import productOne,  { iconsTwo } from './ProductIcons'
 
 
 
@@ -30,6 +30,8 @@ function Home() {
                 login="Email: margo@gmail.com 
                 Pass: 12345"
                 rating={5}
+                icons = {productOne} 
+                
                 />
                  </div> 
 
@@ -43,6 +45,7 @@ function Home() {
                 price={19.99}
                 image="https://res.cloudinary.com/div5hqtbd/image/upload/v1610911651/Untitled_aghpzh.png"
                 rating={4}
+                icons={iconsTwo}
                 />
                 </div>  
             

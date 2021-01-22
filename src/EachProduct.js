@@ -3,7 +3,7 @@ import {useStateValue} from "./StateProvider";
 import DisplayEach from "./DisplayEach"
 
 
-function EachProduct({id, image, title, price, rating,hideButton}) {
+function EachProduct({id, image, icons, title, price, rating,hideButton}) {
     const [{eachProd}, dispatch] = useStateValue()
 
 
@@ -24,6 +24,7 @@ function EachProduct({id, image, title, price, rating,hideButton}) {
                         demolink={item.demolink}
                         description={item.description}
                         login={item.login}
+                        icons={item.icons}
                     />
                 ))}
                     

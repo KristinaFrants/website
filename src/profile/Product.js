@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 import {useStateValue} from "../StateProvider";
 import { Link } from 'react-router-dom'
 
-function Product({id, title, image, price, rating,header, play,description,demolink,login}) {
+function Product({id, title, icons, image, price, rating,header, play,description,demolink,login}) {
     const [{basket}, dispatch] = useStateValue()
 
     const addToBasket = () => {
@@ -28,6 +28,7 @@ function Product({id, title, image, price, rating,header, play,description,demol
                 id: id,
                 title: title,
                 image: image,
+                icons: icons,
                 price: price,
                 rating: rating,
                 header:header,
