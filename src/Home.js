@@ -20,18 +20,45 @@ function Home() {
                 <div className="home__col">
                 <Product  
                 id={1}
-                header="Petfinders"
+                header="PetFinders"
                 title="Fully responcive ReactJs webapp that helps users to sell or buy a furry friend"
                 price={29.99}
+                icons={productOne}
                 image="https://res.cloudinary.com/div5hqtbd/image/upload/v1610911651/Untitled_aghpzh.png"
                 play="https://res.cloudinary.com/div5hqtbd/video/upload/v1610058295/video_dalpks.mp4"
                 demolink="https://petfinders.kristinafrants.vercel.app/"
-                description=" bblala"
-                login="Email: margo@gmail.com 
-                Pass: 12345"
-                rating={5}
-                icons = {productOne} 
+
+                description="A fullstack MVP webapp build from scratch with use of ReactJs Hooks for front-end and Python-Flask for back-end with SQLAlchemy BD. 
+                The boilerplate is build with updated features for Hooks and webpack module bundlers."
+               
+                description1= "PetFinders webapp allows users to Post unlimited adds on the feed for selling, buing or adopting a pet purposes. User have different options when logged in or just visiting app as guest."
                 
+                description2= "A logged in user can fill in a full pet profile with photo and user's contact info, has his own dashbord where he/she can delete an add , post the add in the feed and adjust more info if necessary. A Quick Add button is avaliable only for non-logged in users who wants too post a short add. All adds have features such as Connect an owner to request more info about the pet or his/her contacts via email, or send a message directly to the owner phone."
+                
+                description3="The back-end written in Python offers a lot of options including the ability to check logs, see posts, user information and much more.
+                SQLAlchemy DB gives an easy acces to all nesessary information directly in the terminal and allows to update tables quickly if needed"
+                
+                login="margo@gmail.com" 
+                pass="12345"
+                rating={5}
+                features="
+                💻  ReactJs
+                💻  React Hooks 
+                💻  ReactJs
+                💻  PythonFlask  
+                💻  SQLAlchemy
+                💻  NodeJs  
+                💻  JavaScript  
+                💻  BootStrap  
+                💻  HTML  
+                💻  CSS  
+                💻  SCSS  
+                💻  SAAS  
+                💻  Twillio  
+                💻  FontAwesome
+                💻  WebPack"
+                
+
                 />
                  </div> 
 

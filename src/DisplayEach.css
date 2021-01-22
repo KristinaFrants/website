@@ -23,22 +23,41 @@
 }
 
 .roller__icon{
-    font-size: 65px;
-    color: rgb(187, 35, 207);
+    font-size: 45px;
+    color: #8f44ad;
     text-align: center;    
 }
 
 .displayEach__icons{
-border: 1px solid gold;
+border: 1px solid lightgray;
 margin: 5px 5px 5px 5px;
 text-align: center; 
 }
 
 .roller__icon:hover{
-    color:red;
+    color:#23a6d5;
    
 }
 
 .displayEach__icons:hover{
     background-color: ivory;
 }
+
+.displayEach__content>a{
+   border-radius: 5px ;
+   padding:6px ;
+   text-decoration:none !important;
+   color:white;
+   background-color: rgb(77, 77, 77);
+}
+
+.displayEach__content>a:hover{
+    color:lightgray;
+
+}
+
+/* .displayEach__button:hover{
+    color:black !important;
+    background-color: ivory !important;
+    border: 1px solid #23a6d5 !important;
+} */

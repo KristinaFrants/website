@@ -36,7 +36,6 @@ function Product({id, title, icons, image, price, rating,header, play,descriptio
                 demolink:demolink,
                 description:description,
                 login:login,
-
             },
         })
     }
