@@ -1,8 +1,7 @@
 import React from 'react'
 import "./Home.css"
 import Product from "../src/profile/Product"
-import 'semantic-ui-css/semantic.min.css'
-
+import productOne,  { iconsTwo } from './ProductIcons'
 
 
 
@@ -24,6 +23,7 @@ function Home() {
                 header="PetFinders"
                 title="Fully responcive ReactJs webapp that helps users to sell or buy a furry friend"
                 price={29.99}
+                icons={productOne}
                 image="https://res.cloudinary.com/div5hqtbd/image/upload/v1610911651/Untitled_aghpzh.png"
                 play="https://res.cloudinary.com/div5hqtbd/video/upload/v1610058295/video_dalpks.mp4"
                 demolink="https://petfinders.kristinafrants.vercel.app/"
@@ -69,6 +69,7 @@ function Home() {
                 price={19.99}
                 image="https://res.cloudinary.com/div5hqtbd/image/upload/v1610911651/Untitled_aghpzh.png"
                 rating={4}
+                icons={iconsTwo}
                 />
                 </div>  
             
