@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Home.css"
 import Product from "../src/profile/Product"
+import 'semantic-ui-css/semantic.min.css'
 
 
 
@@ -43,7 +44,6 @@ function Home() {
                 features="
                 💻  ReactJs
                 💻  React Hooks 
-                💻  ReactJs
                 💻  PythonFlask  
                 💻  SQLAlchemy
                 💻  NodeJs  
@@ -64,6 +64,7 @@ function Home() {
                 <div className="home__col ">
                 <Product
                 id={2}
+                header="Simple Veganista"
                 title="Your product description goes here"
                 price={19.99}
                 image="https://res.cloudinary.com/div5hqtbd/image/upload/v1610911651/Untitled_aghpzh.png"
