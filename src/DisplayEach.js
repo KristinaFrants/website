@@ -13,14 +13,14 @@ function DisplayEach({id, icons, image, title, login, demolink, description, des
     const [{ eachProd }, dispatch] = useStateValue();
     const history = useHistory();
 
-    const removeEach =() => {
-        //delite items from the basket
-        dispatch({
-            type: 'EMPTY_PRODUCT',
-            id: id,
-        }) 
-        history.replace('/home')  
-     }
+    // const removeEach =() => {
+    //     //delite items from the basket
+    //     dispatch({
+    //         type: 'EMPTY_PRODUCT',
+    //         id: id,
+    //     }) 
+    //     history.replace('/home')  
+    //  }
 
     function showDemo() {
         const x = document.getElementById("demo");
@@ -35,7 +35,7 @@ function DisplayEach({id, icons, image, title, login, demolink, description, des
 
         <div className="row">
             <div className="displayEach__video col-4">
-                <iframe width="96%" height="290px" src={play}></iframe>
+                <iframe width="96%" height="240px" src={play}></iframe>
                 <div>
                 <Button className="displayEach__button mt-3" onClick={showDemo} variant="dark" size="sm">Demo Login</Button>
                     <p className="mt-4" style={{display:"none"}} id="demo">
