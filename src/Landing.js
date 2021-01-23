@@ -12,13 +12,12 @@ function Landing() {
         <div className="row m-0" >
         <ParallaxContainer/>
             <div>
-           <div> <LandingCard className=" mb-5" /></div>
-           <div> <DesignCards></DesignCards></div>
-            <div> <LandingServices className=""/></div>
-            <div> <ContactForm/></div>
+                <div> <LandingCard className=" mb-5" /></div>
+                <div> <DesignCards></DesignCards></div>
+                <div> <LandingServices /></div>
+                <div> <ContactForm/></div>
             </div>
         </div>
-    
     )
 }
 

@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-
 import './Header.css'
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
@@ -21,8 +20,6 @@ function NavigationBar() {
 {
     window.location = "mailto:xyz@abc.com";
 }
-
-
 
     const handleAuthentication = () => {
         if (user) {
@@ -43,30 +40,25 @@ const hideDropdown = e => {
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="header">
         <Navbar.Brand >
                     <Link to="/home">
-                    <FontAwesomeIcon icon={faStoreAlt} className= "header__logo m-1"/>
+                      <FontAwesomeIcon icon={faStoreAlt} className= "header__logo m-1"/>
                     </Link>
         </Navbar.Brand>
         <Navbar.Toggle />
 
         <Navbar.Collapse>
           <Nav className="mr-auto">
-
             <Nav.Link href= "/landing">
-            <div className="header__right ">
-                Services
-            </div>
-          
+              <div className="header__right ">
+                  About Me
+              </div>
             </Nav.Link>
-
             <Nav.Link href="#bar">Company</Nav.Link>
-
             <NavDropdown 
             title="Profile" id="collasible-nav-dropdown"
             show={show}
             onMouseEnter={showDropdown} 
             onMouseLeave={hideDropdown}
             className="header__dropdown">
-
               <NavDropdown.Item>
               <Link to={!user && "/login"} className="header__link">
                 <div onClick={handleAuthentication} className="header__option">
@@ -74,7 +66,6 @@ const hideDropdown = e => {
                 </div>
                 </Link>
               </NavDropdown.Item>
-
               <NavDropdown.Item>
               <Link to={!user && "/login"} className="header__link">
                 <div onClick={handleAuthentication} className="header__option">
@@ -83,7 +74,6 @@ const hideDropdown = e => {
                       </div>
                 </Link>
               </NavDropdown.Item>
-
               <NavDropdown.Item> 
               <Link to="/orders" className="header__link">
                 <div className="header__option ">
@@ -92,7 +82,6 @@ const hideDropdown = e => {
                 </div>
                 </Link>
               </NavDropdown.Item>
-
               <NavDropdown.Divider />
               <NavDropdown.Item>
               <Link to="/checkout">

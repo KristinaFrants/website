@@ -24,7 +24,6 @@
 	100% {
 		background-position: 0% 50%;
 	}
-
 }
 
 .canvas__contactInfo__right>h2{
@@ -37,15 +36,13 @@
 .canvas__contactInfo__left>button{
     margin-top: 10%;
     background: transparent !important;
-    /* border: 2px solid #fff; */
     color: #fff;
-    
 }
 
 .canvas__contactInfo__left>button:hover{
     color: rgb(99, 4, 99);
+    background-color: white !important;
 }
-
 
 .ContactForm__modalInput{
     width: 100%;
@@ -55,7 +52,6 @@
     font-family: Playfair Display, serif;
     border: 1px solid white;
     padding: 12px !important;
-
 }
 
 .ContactForm__modalInput:focus{
@@ -63,9 +59,8 @@
 }
 
 .modal__contactForm{
-    background-image: url(https://image.freepik.com/free-vector/powder-pastel-wallpaper-concept_23-2148600640.jpg);
+    /* background-image: url(https://image.freepik.com/free-vector/powder-pastel-wallpaper-concept_23-2148600640.jpg); */
     font-family: Playfair Display, serif;
-   
 }
 
 .modal__contactForm >p{
