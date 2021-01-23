@@ -58,7 +58,7 @@ const hideDropdown = e => {
           
             </Nav.Link>
 
-            <Nav.Link href="#bar">Company</Nav.Link>
+            <Nav.Link href="/home">Portfolio</Nav.Link>
 
             <NavDropdown 
             title="Profile" id="collasible-nav-dropdown"
