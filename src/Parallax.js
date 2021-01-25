@@ -16,18 +16,12 @@ const image1 =
 
 const ParallaxContainer = () => (
   <div style={{width:'100%',marginBottom:"10%"}}>
-    <Parallax bgImage={image1} strength={200}>
-    <div style={{ height: '500px', border: "15px solid white", borderRadius: "5px" }} />
-     
+    <Parallax bgImage={image1} strength={700}>
+        <div style={{ height: '650px', border: "15px solid white", borderRadius: "5px" }} />
         <div style={insideStyles}>HTML inside the parallax
-        <p>Paragraph inside the block</p></div>
-      
+
+        </div>
     </Parallax>
-    {/* <h2>| | |</h2> */}
-    {/* <br/>
-    <br/>
-    <br/>
-    <br/> */}
   </div>
 );
 export default ParallaxContainer
