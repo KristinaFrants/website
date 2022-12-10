@@ -1,5 +1,72 @@
 {
+<<<<<<< HEAD
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.2.1"
+=======
+  "name": "website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-pro": "^5.3.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.12",
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.11.0",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.1.2",
+    "@testing-library/user-event": "^12.2.2",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.5.3",
+    "firebase": "^8.0.2",
+    "font-awesome-icons": "^1.6.0",
+    "moment": "^2.29.1",
+    "react": "^17.0.1",
+    "react-axios": "^2.0.3",
+    "react-bootstrap": "^1.4.0",
+    "react-currency-format": "^1.0.0",
+    "react-dom": "^17.0.1",
+    "react-flippy": "^0.1.5",
+    "react-hover-video-player": "^6.7.0",
+    "react-parallax": "^3.1.2",
+    "react-player": "^2.7.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.0",
+    "react-scroll-parallax": "^2.3.5",
+    "react-spring": "^8.0.27",
+    "react-state-context": "^1.0.0",
+    "reactstrap": "^8.7.1",
+    "reducers": "^3.0.0-alpha",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3",
+    "stripe": "^8.121.0",
+    "video-react": "^0.14.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+>>>>>>> 98ed697c0689711525a6bf247f0ea468ab76d8e2
   }
 }

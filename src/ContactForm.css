@@ -1,0 +1,72 @@
+.gradient__canvasContact{
+    opacity: 1;
+    box-sizing: border-box;
+    padding: 60px;
+    display: block;
+    height: 100%;
+    margin-top: 4%;
+    border: 15px solid white;
+    border-radius: 5px;
+    margin-left:2%;
+    margin-right: 2%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.canvas__contactInfo__right>h2{
+    color:white;
+    font-family: Playfair Display, serif;
+    text-align: left;
+    margin-top: 3%;
+}
+
+.canvas__contactInfo__left>button{
+    margin-top: 10%;
+    background: transparent !important;
+    color: #fff;
+}
+
+.canvas__contactInfo__left>button:hover{
+    color: rgb(99, 4, 99);
+    background-color: white !important;
+}
+
+.ContactForm__modalInput{
+    width: 100%;
+    height: 45px !important;
+    /* margin-bottom: 4%; */
+    margin-top: 4%;
+    font-family: Playfair Display, serif;
+    border: 1px solid white;
+    padding: 12px !important;
+}
+
+.ContactForm__modalInput:focus{
+    outline: none;
+}
+
+.modal__contactForm{
+    /* background-image: url(https://image.freepik.com/free-vector/powder-pastel-wallpaper-concept_23-2148600640.jpg); */
+    font-family: Playfair Display, serif;
+}
+
+.modal__contactForm >p{
+text-align: center;
+}
+
+.modal__contactForm >button{
+    font-family: Helvetica, Arial, sans-serif;
+}

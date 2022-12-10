@@ -1,0 +1,117 @@
+.LandingCardServices__cards{
+    background-color: white !important;
+     margin:4% 2% 4% 3%;
+     transition: top ease 0.5s;
+     display: flex;
+     transition: transform 0.8s;
+  transform-style: preserve-3d;
+  font-family: Playfair Display, serif
+}
+
+.LandingCardServices__cards:hover{
+    top: -10px;
+    box-shadow: 0px 0px 10px 0px black;
+    transform: rotateY(180deg);
+    transition: all 0.6s ease-in-out 0s;
+  }
+
+  .flip_card_back{
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    position: absolute;
+    transform: rotateY(180deg);
+    background-color:white;
+   padding-left: 4%;
+  }
+
+  .LandingCardServices__info{
+    float: right;
+    color:  #23a6d5;
+    object-fit: contain;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .row_cards{
+    background:linear-gradient(45deg, #8f44ad 0%,#46b39e 100%);
+  }
+  .button_container{
+    border-color: white;
+    width: 25%;
+    margin:auto;
+    border-radius: 5px;
+    padding: 1%;
+    border-style: solid;
+    border-width: 1px;
+  }
+  .button_container:hover{
+    background-color: white;
+  }
+
+  .LandingServices__blob{
+    background:linear-gradient(45deg, #8f44ad 0%,#46b39e 100%);
+    padding: 60px;
+    display: block;
+    height: 100%;
+    margin-top: 4%;
+    border: 15px solid white;
+    border-radius: 5px;
+    margin-left:1%;
+    margin-right: 1%;
+  }
+
+  .LandingServicesBlob__left * p{
+  margin:0%;
+  color: white;
+}
+
+.LandingServicesBlob__left * P:hover {
+  color: rgb(99, 4, 99);
+}
+
+.LandingServicesBlob__right * p{
+  margin:0%;
+  color: white;
+}
+.LandingServicesBlob__right * P:hover {
+  color: rgb(99, 4, 99);
+}
+
+  .LandingServicesBlob__left> h2{
+    color:white;
+    font-family: Playfair Display, serif;
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  .LandingServicesBlob__left>p{
+    color:white;
+    font-family: Playfair Display, serif;
+    text-align: center;
+    padding: 10%;
+    font-size: 18px;
+    margin-bottom: 0 !important;
+  }
+
+  .LandingServicesBlob__right> h2{
+    color:white;
+    font-family: Playfair Display, serif;
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  .LandingServicesBlob__right>p{
+    color:white;
+    font-family: Playfair Display, serif;
+    text-align: center;
+    padding: 10%;
+    font-size: 18px;
+  }
+
+  .LandingServicesBlob__leftLink , 
+  .LandingServicesBlob__rightLink {
+    color:rgb(94, 3, 82);
+    font-family: Playfair Display, serif;
+    text-align: center;
+    text-decoration: none !important;
+    font-size: 18px;
+  }
